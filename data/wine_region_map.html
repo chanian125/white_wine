@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_0d434687dbce2d23e01f6cb91ea0b542 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdn.jsdelivr.net/gh/python-visualization/folium@main/folium/templates/leaflet_heat.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_0d434687dbce2d23e01f6cb91ea0b542" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_0d434687dbce2d23e01f6cb91ea0b542 = L.map(
+                "map_0d434687dbce2d23e01f6cb91ea0b542",
+                {
+                    center: [20.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 2,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_3fa5667a016882aac97c2f27a6eed543 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_3fa5667a016882aac97c2f27a6eed543.addTo(map_0d434687dbce2d23e01f6cb91ea0b542);
+        
+    
+            var circle_marker_e98a1eff70acb92a516e878efc353254 = L.circleMarker(
+                [38.5025, -122.2654],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_0d434687dbce2d23e01f6cb91ea0b542);
+        
+    
+        var popup_ef1ef830ce88d4cbd30af3a2661027a0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_301f3ca1299aac817f3cae53819be474 = $(`<div id="html_301f3ca1299aac817f3cae53819be474" style="width: 100.0%; height: 100.0%;"><strong>Region:</strong> Napa Valley<br><strong>Quality:</strong> 9.0<br><strong>Production:</strong> 1000</div>`)[0];
+                popup_ef1ef830ce88d4cbd30af3a2661027a0.setContent(html_301f3ca1299aac817f3cae53819be474);
+            
+        
+
+        circle_marker_e98a1eff70acb92a516e878efc353254.bindPopup(popup_ef1ef830ce88d4cbd30af3a2661027a0)
+        ;
+
+        
+    
+    
+            var circle_marker_4f008d4e942f7a8418d834c63b9b241b = L.circleMarker(
+                [44.8378, -0.5792],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_0d434687dbce2d23e01f6cb91ea0b542);
+        
+    
+        var popup_2724fb86dc6d106d3102c5f5b914d222 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_88b740d38371bcce482ebefea458db6c = $(`<div id="html_88b740d38371bcce482ebefea458db6c" style="width: 100.0%; height: 100.0%;"><strong>Region:</strong> Bordeaux<br><strong>Quality:</strong> 8.5<br><strong>Production:</strong> 2000</div>`)[0];
+                popup_2724fb86dc6d106d3102c5f5b914d222.setContent(html_88b740d38371bcce482ebefea458db6c);
+            
+        
+
+        circle_marker_4f008d4e942f7a8418d834c63b9b241b.bindPopup(popup_2724fb86dc6d106d3102c5f5b914d222)
+        ;
+
+        
+    
+    
+            var circle_marker_dbb27f7e7f75e7ded9d89e28c7606ff9 = L.circleMarker(
+                [43.7711, 11.2486],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_0d434687dbce2d23e01f6cb91ea0b542);
+        
+    
+        var popup_58a91b5c666342ecdf6b90ad3f55ace5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5b2e80cd903d0b7eb13cfc67d17afb22 = $(`<div id="html_5b2e80cd903d0b7eb13cfc67d17afb22" style="width: 100.0%; height: 100.0%;"><strong>Region:</strong> Tuscany<br><strong>Quality:</strong> 8.8<br><strong>Production:</strong> 1500</div>`)[0];
+                popup_58a91b5c666342ecdf6b90ad3f55ace5.setContent(html_5b2e80cd903d0b7eb13cfc67d17afb22);
+            
+        
+
+        circle_marker_dbb27f7e7f75e7ded9d89e28c7606ff9.bindPopup(popup_58a91b5c666342ecdf6b90ad3f55ace5)
+        ;
+
+        
+    
+    
+            var circle_marker_e75a62128167ca7bde4c8510f5f4aa69 = L.circleMarker(
+                [-32.8895, -68.8458],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_0d434687dbce2d23e01f6cb91ea0b542);
+        
+    
+        var popup_4e5db38ffbf8f546b4529b6b35b762d7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0ea1b711263d8df000206f9fbefab9e4 = $(`<div id="html_0ea1b711263d8df000206f9fbefab9e4" style="width: 100.0%; height: 100.0%;"><strong>Region:</strong> Mendoza<br><strong>Quality:</strong> 8.7<br><strong>Production:</strong> 1200</div>`)[0];
+                popup_4e5db38ffbf8f546b4529b6b35b762d7.setContent(html_0ea1b711263d8df000206f9fbefab9e4);
+            
+        
+
+        circle_marker_e75a62128167ca7bde4c8510f5f4aa69.bindPopup(popup_4e5db38ffbf8f546b4529b6b35b762d7)
+        ;
+
+        
+    
+    
+            var circle_marker_988921ca851fc8df2f1d8bc74a01c209 = L.circleMarker(
+                [-34.5667, 138.9455],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_0d434687dbce2d23e01f6cb91ea0b542);
+        
+    
+        var popup_062e35f1401667d2e9bdb040973481aa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2850c9f4353321cea38d01e4be5392e2 = $(`<div id="html_2850c9f4353321cea38d01e4be5392e2" style="width: 100.0%; height: 100.0%;"><strong>Region:</strong> Barossa Valley<br><strong>Quality:</strong> 8.9<br><strong>Production:</strong> 1100</div>`)[0];
+                popup_062e35f1401667d2e9bdb040973481aa.setContent(html_2850c9f4353321cea38d01e4be5392e2);
+            
+        
+
+        circle_marker_988921ca851fc8df2f1d8bc74a01c209.bindPopup(popup_062e35f1401667d2e9bdb040973481aa)
+        ;
+
+        
+    
+    
+            var circle_marker_cca67a18a593bbfcf8f246ae3c18cfc6 = L.circleMarker(
+                [42.4656, -2.8677],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_0d434687dbce2d23e01f6cb91ea0b542);
+        
+    
+        var popup_32aa4338873ab6f870fa3c1e480217c3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4f4bc4cbea557d7045fe4775019c422e = $(`<div id="html_4f4bc4cbea557d7045fe4775019c422e" style="width: 100.0%; height: 100.0%;"><strong>Region:</strong> Rioja<br><strong>Quality:</strong> 8.4<br><strong>Production:</strong> 1300</div>`)[0];
+                popup_32aa4338873ab6f870fa3c1e480217c3.setContent(html_4f4bc4cbea557d7045fe4775019c422e);
+            
+        
+
+        circle_marker_cca67a18a593bbfcf8f246ae3c18cfc6.bindPopup(popup_32aa4338873ab6f870fa3c1e480217c3)
+        ;
+
+        
+    
+    
+            var circle_marker_e8171b25fce47b0b29bb8b5ae9da29d7 = L.circleMarker(
+                [49.0566, 3.9694],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_0d434687dbce2d23e01f6cb91ea0b542);
+        
+    
+        var popup_63ca804208d4e9b3d5311c2f1bb726e1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ac43741e3d3f184f4408ed962e044cf5 = $(`<div id="html_ac43741e3d3f184f4408ed962e044cf5" style="width: 100.0%; height: 100.0%;"><strong>Region:</strong> Champagne<br><strong>Quality:</strong> 9.2<br><strong>Production:</strong> 1400</div>`)[0];
+                popup_63ca804208d4e9b3d5311c2f1bb726e1.setContent(html_ac43741e3d3f184f4408ed962e044cf5);
+            
+        
+
+        circle_marker_e8171b25fce47b0b29bb8b5ae9da29d7.bindPopup(popup_63ca804208d4e9b3d5311c2f1bb726e1)
+        ;
+
+        
+    
+    
+            var circle_marker_de166b0e35f527af6d59daa79886658b = L.circleMarker(
+                [41.1603, -7.6862],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_0d434687dbce2d23e01f6cb91ea0b542);
+        
+    
+        var popup_b3bd5033fff8846f9df257f69cf69386 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6c8c63f4edcdf7583ebc91dab534e6ec = $(`<div id="html_6c8c63f4edcdf7583ebc91dab534e6ec" style="width: 100.0%; height: 100.0%;"><strong>Region:</strong> Douro<br><strong>Quality:</strong> 8.6<br><strong>Production:</strong> 1250</div>`)[0];
+                popup_b3bd5033fff8846f9df257f69cf69386.setContent(html_6c8c63f4edcdf7583ebc91dab534e6ec);
+            
+        
+
+        circle_marker_de166b0e35f527af6d59daa79886658b.bindPopup(popup_b3bd5033fff8846f9df257f69cf69386)
+        ;
+
+        
+    
+    
+            var circle_marker_aecce117cad4e168ea38e87c39aaea34 = L.circleMarker(
+                [44.7254, 8.0106],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_0d434687dbce2d23e01f6cb91ea0b542);
+        
+    
+        var popup_40a9acd5a9553c4901471af89fe9cf97 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_426bb4a770c8145b8e3c95125bcb1799 = $(`<div id="html_426bb4a770c8145b8e3c95125bcb1799" style="width: 100.0%; height: 100.0%;"><strong>Region:</strong> Piedmont<br><strong>Quality:</strong> 9.1<br><strong>Production:</strong> 1600</div>`)[0];
+                popup_40a9acd5a9553c4901471af89fe9cf97.setContent(html_426bb4a770c8145b8e3c95125bcb1799);
+            
+        
+
+        circle_marker_aecce117cad4e168ea38e87c39aaea34.bindPopup(popup_40a9acd5a9553c4901471af89fe9cf97)
+        ;
+
+        
+    
+    
+            var circle_marker_fd2de72212187195ea5868456ef9558f = L.circleMarker(
+                [-33.9346, 18.8564],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_0d434687dbce2d23e01f6cb91ea0b542);
+        
+    
+        var popup_7b5c9c49629fe2396fd6caf9aa16f9d9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_46bd2d92ad10788877a987e610368dc6 = $(`<div id="html_46bd2d92ad10788877a987e610368dc6" style="width: 100.0%; height: 100.0%;"><strong>Region:</strong> Stellenbosch<br><strong>Quality:</strong> 8.8<br><strong>Production:</strong> 1700</div>`)[0];
+                popup_7b5c9c49629fe2396fd6caf9aa16f9d9.setContent(html_46bd2d92ad10788877a987e610368dc6);
+            
+        
+
+        circle_marker_fd2de72212187195ea5868456ef9558f.bindPopup(popup_7b5c9c49629fe2396fd6caf9aa16f9d9)
+        ;
+
+        
+    
+    
+            var circle_marker_087e7bfee80d49d010014092ab09d266 = L.circleMarker(
+                [-32.9009, 151.3793],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_0d434687dbce2d23e01f6cb91ea0b542);
+        
+    
+        var popup_aa685f6352492c9d4539220c1056514f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b6ed41cbd8ec5d6975843ead4891cb01 = $(`<div id="html_b6ed41cbd8ec5d6975843ead4891cb01" style="width: 100.0%; height: 100.0%;"><strong>Region:</strong> Hunter Valley<br><strong>Quality:</strong> 8.7<br><strong>Production:</strong> 1150</div>`)[0];
+                popup_aa685f6352492c9d4539220c1056514f.setContent(html_b6ed41cbd8ec5d6975843ead4891cb01);
+            
+        
+
+        circle_marker_087e7bfee80d49d010014092ab09d266.bindPopup(popup_aa685f6352492c9d4539220c1056514f)
+        ;
+
+        
+    
+    
+            var circle_marker_63a3db812480cf82a9eb6abab68ff4c2 = L.circleMarker(
+                [47.0524, 4.8455],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_0d434687dbce2d23e01f6cb91ea0b542);
+        
+    
+        var popup_1855c012da6f912f87d3f811749f43ca = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_51a4af8f31fbdf2919ca13dd8c9e53d1 = $(`<div id="html_51a4af8f31fbdf2919ca13dd8c9e53d1" style="width: 100.0%; height: 100.0%;"><strong>Region:</strong> Burgundy<br><strong>Quality:</strong> 9.3<br><strong>Production:</strong> 1800</div>`)[0];
+                popup_1855c012da6f912f87d3f811749f43ca.setContent(html_51a4af8f31fbdf2919ca13dd8c9e53d1);
+            
+        
+
+        circle_marker_63a3db812480cf82a9eb6abab68ff4c2.bindPopup(popup_1855c012da6f912f87d3f811749f43ca)
+        ;
+
+        
+    
+    
+            var circle_marker_5f9b8c5213dd8293e76065f21aad0112 = L.circleMarker(
+                [47.361, 0.4986],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_0d434687dbce2d23e01f6cb91ea0b542);
+        
+    
+        var popup_c4f12aa6dcef088eb6ba206b01502aa5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fb68433299a7c4a769a60e42870a55e1 = $(`<div id="html_fb68433299a7c4a769a60e42870a55e1" style="width: 100.0%; height: 100.0%;"><strong>Region:</strong> Loire Valley<br><strong>Quality:</strong> 8.5<br><strong>Production:</strong> 1350</div>`)[0];
+                popup_c4f12aa6dcef088eb6ba206b01502aa5.setContent(html_fb68433299a7c4a769a60e42870a55e1);
+            
+        
+
+        circle_marker_5f9b8c5213dd8293e76065f21aad0112.bindPopup(popup_c4f12aa6dcef088eb6ba206b01502aa5)
+        ;
+
+        
+    
+    
+            var circle_marker_caa4fa145edd390702bfc63ee25f4256 = L.circleMarker(
+                [38.4337, -122.869],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_0d434687dbce2d23e01f6cb91ea0b542);
+        
+    
+        var popup_9ffaa1b2035e8b3a34ce81da306a108d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_860640bda1f3e9a0b3a5a2e058a7a15f = $(`<div id="html_860640bda1f3e9a0b3a5a2e058a7a15f" style="width: 100.0%; height: 100.0%;"><strong>Region:</strong> Sonoma<br><strong>Quality:</strong> 8.9<br><strong>Production:</strong> 1550</div>`)[0];
+                popup_9ffaa1b2035e8b3a34ce81da306a108d.setContent(html_860640bda1f3e9a0b3a5a2e058a7a15f);
+            
+        
+
+        circle_marker_caa4fa145edd390702bfc63ee25f4256.bindPopup(popup_9ffaa1b2035e8b3a34ce81da306a108d)
+        ;
+
+        
+    
+    
+            var circle_marker_c40ff4912fa4348500e266756e642a68 = L.circleMarker(
+                [48.3182, 7.4416],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_0d434687dbce2d23e01f6cb91ea0b542);
+        
+    
+        var popup_f1c0b95ed6a5d4ff7f33f374aa29806a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_793be0cd8874f4c8cf093dac127076c2 = $(`<div id="html_793be0cd8874f4c8cf093dac127076c2" style="width: 100.0%; height: 100.0%;"><strong>Region:</strong> Alsace<br><strong>Quality:</strong> 9.0<br><strong>Production:</strong> 1650</div>`)[0];
+                popup_f1c0b95ed6a5d4ff7f33f374aa29806a.setContent(html_793be0cd8874f4c8cf093dac127076c2);
+            
+        
+
+        circle_marker_c40ff4912fa4348500e266756e642a68.bindPopup(popup_f1c0b95ed6a5d4ff7f33f374aa29806a)
+        ;
+
+        
+    
+    
+            var heat_map_2bb38648a8001fd436e8528957d2fc92 = L.heatLayer(
+                [[38.5025, -122.2654, 9.0], [44.8378, -0.5792, 8.5], [43.7711, 11.2486, 8.8], [-32.8895, -68.8458, 8.7], [-34.5667, 138.9455, 8.9], [42.4656, -2.8677, 8.4], [49.0566, 3.9694, 9.2], [41.1603, -7.6862, 8.6], [44.7254, 8.0106, 9.1], [-33.9346, 18.8564, 8.8], [-32.9009, 151.3793, 8.7], [47.0524, 4.8455, 9.3], [47.361, 0.4986, 8.5], [38.4337, -122.869, 8.9], [48.3182, 7.4416, 9.0]],
+                {"blur": 15, "maxZoom": 18, "minOpacity": 0.5, "radius": 25}
+            );
+        
+    
+            heat_map_2bb38648a8001fd436e8528957d2fc92.addTo(map_0d434687dbce2d23e01f6cb91ea0b542);
+        
+</script>
+</html>
